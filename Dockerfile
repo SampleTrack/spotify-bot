@@ -1,6 +1,6 @@
 FROM python:3.10-slim
 
-# Install FFmpeg
+# Install FFmpeg (Crucial for fixing the download error)
 RUN apt-get update && \
     apt-get install -y ffmpeg git && \
     rm -rf /var/lib/apt/lists/*
